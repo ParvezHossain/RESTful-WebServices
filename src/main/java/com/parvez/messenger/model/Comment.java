@@ -19,19 +19,14 @@ public class Comment {
     private Date created;
     private String author;
 
-    public Comment(long id) {
-        this.id = id;
+    public Comment() {
     }
 
     public Comment(long id, String message, Date created, String author) {
         this.id = id;
         this.message = message;
-        this.created = created;
+        this.created = new Date();
         this.author = author;
-    }
-
-    public Comment(long l, String test_Comment, Date date, String parvez) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     public long getId() {
